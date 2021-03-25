@@ -26,8 +26,8 @@ namespace UTTT.Ejemplo.Linq.Data.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("data source=DESKTOP-ART4CME\\SQLEXPRESS;\ndatabase=Persona;\nIntegrated Security=SSP" +
-            "I;\npersist security info=True;")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=PersonaFrancisco.mssql.somee.com;Initial Catalog=PersonaFrancisco;Per" +
+            "sist Security Info=True;User ID=kfaxlopz_SQLLogin_1;Password=z95wkbn95o")]
         public string PersonaConnectionString {
             get {
                 return ((string)(this["PersonaConnectionString"]));
