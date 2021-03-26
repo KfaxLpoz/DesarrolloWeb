@@ -9,8 +9,9 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" ></script>
 
 </head>
-<body>
-    <div class="container well contenedor">
+<body style="background-color : ghostwhite">
+    
+    <div class="container well contenedor " style="background-color :aliceblue">
         <div class="row">
             <div class="col-xs-12">
               <h2><asp:Label ID="lblAccion" runat="server" Text="Registro" Font-Bold="True" CssClass="align-content-center"></asp:Label></h2>
