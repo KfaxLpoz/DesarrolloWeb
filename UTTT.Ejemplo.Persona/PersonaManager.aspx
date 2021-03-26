@@ -225,9 +225,11 @@
                      </div>
                      <asp:RegularExpressionValidator ID="reRFC" runat="server"
                           ErrorMessage="por favor ingresa un Un RFC valido ej: XAXX010101000 o XEXX010101000"
-                          ControlToValidate="txtRFC" ValidationExpression="^([A-ZÑ&]{3,4}) ?(?:- ?)?(\d{2}(?:0[1-9]|1[0-2])(?:0[1-9]|[12]\d|3[01])) ?(?:- ?)?([A-Z\d]{2})([A\d])$"
+                          ControlToValidate="txtRFC" ValidationExpression="^([A-Za-zÑ&]{3,4}) ?(?:- ?)?(\d{2}(?:0[1-9]|1[0-2])(?:0[1-9]|[12]\d|3[01])) ?(?:- ?)?([A-Za-z\d]{2})([A-Za-z\d])$"
                           CssClass="form-control alert-danger text-center"></asp:RegularExpressionValidator>
-                    
+                            <%--[A-Za-zÑ&]{3,4}\d{6}[A-Va-v1-9][A-Za-z1-9][0-9Aa]--%>
+                        <%--^([A-Za-zÑ&]{3,4}) ?(?:- ?)?(\d{2}(?:0[1-9]|1[0-2])(?:0[1-9]|[12]\d|3[01])) ?(?:- ?)?([A-Za-z\d]{2})([A-Za-z\d])$--%>
+
                 </div>
                         <script language="javascript">
                                function RFCFun(e) {
