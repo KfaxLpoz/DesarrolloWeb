@@ -5,6 +5,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"/>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" ></script>
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -29,7 +32,8 @@
     <div>
     
         Sexo:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:DropDownList ID="ddlSexo" runat="server" Height="22px" Width="177px">
+        <asp:DropDownList ID="ddlSexo" runat="server" Height="35px" Width="177px" 
+            ForeColor="White" CssClass="selectpicker btn bg-secondary ">
         </asp:DropDownList>
     
     </div>
@@ -43,19 +47,18 @@
         </div>
        
         <div>
-        
-             <asp:GridView ID="dgvPersonas" runat="server" 
+<%--                Width="1067px" CellPadding="3" GridLines="Horizontal" 
+                 BackColor="White" 
+                BorderColor="#E7E7FF" BorderStyle="None" BorderWidth="1px"--%>        
+             <asp:GridView ID="dgvPersonas" runat="server" onrowcommand="dgvPersonas_RowCommand"
                 AllowPaging="True" AutoGenerateColumns="False" DataSourceID="DataSourcePersona" 
-                Width="1067px" CellPadding="3" GridLines="Horizontal" 
-                onrowcommand="dgvPersonas_RowCommand" BackColor="White" 
-                BorderColor="#E7E7FF" BorderStyle="None" BorderWidth="1px" 
-                ViewStateMode="Disabled">
-                <AlternatingRowStyle BackColor="#F7F7F7" />
+                ViewStateMode="Disabled" CssClass="table border-light">
+                <AlternatingRowStyle BackColor="WhiteSmoke" />
                 <Columns>
                     <asp:BoundField DataField="strClaveUnica" HeaderText="Clave Unica" 
                         ReadOnly="True" SortExpression="strClaveUnica" />
                     <asp:BoundField DataField="strNombre" HeaderText="Nombre" ReadOnly="True" 
-                        SortExpression="strNombre" />
+                        SortExpression="strNombre"  />
                     <asp:BoundField DataField="strAPaterno" HeaderText="APaterno" ReadOnly="True" 
                         SortExpression="strAPaterno" />
                     <asp:BoundField DataField="strAMaterno" HeaderText="AMaterno" ReadOnly="True" 
@@ -88,7 +91,7 @@
                     </asp:TemplateField>
                 </Columns>
                 <FooterStyle BackColor="#B5C7DE" ForeColor="#4A3C8C" />
-                <HeaderStyle BackColor="#4A3C8C" Font-Bold="True" ForeColor="#F7F7F7" />
+                <HeaderStyle BackColor="#3366cc" Font-Bold="True" ForeColor="#F7F7F7" />
                 <PagerStyle BackColor="#E7E7FF" ForeColor="#4A3C8C" HorizontalAlign="Right" />
                 <RowStyle BackColor="#E7E7FF" ForeColor="#4A3C8C" />
                 <SelectedRowStyle BackColor="#738A9C" Font-Bold="True" ForeColor="#F7F7F7" />

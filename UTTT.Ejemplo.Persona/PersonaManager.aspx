@@ -29,6 +29,15 @@
             </asp:DropDownList>
 
                     </div>
+<%--                    <div>
+                        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+
+                        <ajaxToolkit:ComboBox ID="ddlSexo" runat="server" 
+                onselectedindexchanged="ddlSexo_SelectedIndexChanged"  ForeColor="black"
+                            CssClass="selectpicker btn btn-secondary" Width="610px" Height="38px" DropDownStyle="DropDownList">
+                        </ajaxToolkit:ComboBox>
+
+                    </div>--%>
                                             <div>
                             <asp:RequiredFieldValidator runat="server" ControlToValidate="ddlSexo" InitialValue="-1"
                                  ErrorMessage="Porfavor selecciona un genero" ID="rfvSexo" 

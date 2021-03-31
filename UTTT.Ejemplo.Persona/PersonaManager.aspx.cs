@@ -236,7 +236,7 @@ namespace UTTT.Ejemplo.Persona
             }
             _control.Items.FindByText(_value).Selected = true;
         }
-
+        //DropDownList _control    AjaxControlToolkit.ComboBox
         #endregion
     }
 }
