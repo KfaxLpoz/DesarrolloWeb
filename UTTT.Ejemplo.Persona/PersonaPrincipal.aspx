@@ -19,21 +19,21 @@
     <p>
         Normbre:&nbsp;&nbsp;&nbsp;
 
-        <asp:TextBox ID="txtNombre" runat="server" Width="174px" 
-            ViewStateMode="Disabled"></asp:TextBox>
+        <asp:TextBox ID="txtNombre" runat="server" Width="350px" 
+            ViewStateMode="Disabled" CssClass="form-control card"></asp:TextBox>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Button ID="btnBuscar" runat="server" Text="Buscar" 
-            onclick="btnBuscar_Click" ViewStateMode="Disabled" />
+            onclick="btnBuscar_Click" ViewStateMode="Disabled" CssClass="form-control btn btn-outline-primary" Width="150px"/>
         &nbsp;&nbsp;&nbsp;
         <asp:Button ID="btnAgregar" runat="server" Text="Agregar" 
-            onclick="btnAgregar_Click" ViewStateMode="Disabled" />
+            onclick="btnAgregar_Click" ViewStateMode="Disabled" CssClass="form-control btn btn-outline-secondary" Width="150px"/>
     </p>
     </div>
     <div>
     
         Sexo:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:DropDownList ID="ddlSexo" runat="server" Height="35px" Width="177px" 
-            ForeColor="White" CssClass="selectpicker btn bg-secondary ">
+            ForeColor="White" CssClass="form-select btn bg-secondary ">
         </asp:DropDownList>
     
     </div>
@@ -52,8 +52,8 @@
                 BorderColor="#E7E7FF" BorderStyle="None" BorderWidth="1px"--%>        
              <asp:GridView ID="dgvPersonas" runat="server" onrowcommand="dgvPersonas_RowCommand"
                 AllowPaging="True" AutoGenerateColumns="False" DataSourceID="DataSourcePersona" 
-                ViewStateMode="Disabled" CssClass="table border-light">
-                <AlternatingRowStyle BackColor="WhiteSmoke" />
+                ViewStateMode="Disabled" CssClass="table border-light border-dark ">
+                <%--<AlternatingRowStyle BackColor="WhiteSmoke" />--%>
                 <Columns>
                     <asp:BoundField DataField="strClaveUnica" HeaderText="Clave Unica" 
                         ReadOnly="True" SortExpression="strClaveUnica" />
@@ -90,14 +90,14 @@
                     
                     </asp:TemplateField>
                 </Columns>
-                <FooterStyle BackColor="#B5C7DE" ForeColor="#4A3C8C" />
-                <HeaderStyle BackColor="#3366cc" Font-Bold="True" ForeColor="#F7F7F7" />
-                <PagerStyle BackColor="#E7E7FF" ForeColor="#4A3C8C" HorizontalAlign="Right" />
-                <RowStyle BackColor="#E7E7FF" ForeColor="#4A3C8C" />
-                <SelectedRowStyle BackColor="#738A9C" Font-Bold="True" ForeColor="#F7F7F7" />
-                <SortedAscendingCellStyle BackColor="#F4F4FD" />
-                <SortedAscendingHeaderStyle BackColor="#5A4C9D" />
-                <SortedDescendingCellStyle BackColor="#D8D8F0" />
+                <FooterStyle BackColor="#B5C7DE" ForeColor="#F7F7F7" />
+                <HeaderStyle BackColor="ControlDarkDark" Font-Bold="True" ForeColor="#F7F7F7" />
+                <PagerStyle BackColor="SlateGray" ForeColor="#4A3C8C" HorizontalAlign="Right" />
+                <RowStyle BackColor="ButtonShadow" ForeColor="#F7F7F7" />
+                <SelectedRowStyle BackColor="Coral" Font-Bold="True" ForeColor="#F7F7F7" />
+                <SortedAscendingCellStyle BackColor="#F7F7F7" />
+                <SortedAscendingHeaderStyle BackColor="#F7F7F7" />
+                <SortedDescendingCellStyle BackColor="#F7F7F7" />
                 <SortedDescendingHeaderStyle BackColor="#3E3277" />
             </asp:GridView>
         
