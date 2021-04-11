@@ -86,6 +86,7 @@
     <Content Include="DireccionExtraManager.aspx" />
     <Content Include="DireccionManager.aspx" />
     <Content Include="errorPage.aspx" />
+    <Content Include="estilos\cssLogin.css" />
     <Content Include="estilos\estiloHome.css" />
     <Content Include="Images\delrecord_16x16.png" />
     <Content Include="Images\editrecord_16x16.png" />

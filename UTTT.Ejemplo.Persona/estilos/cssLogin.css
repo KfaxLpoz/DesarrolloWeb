@@ -1,0 +1,15 @@
+﻿h2{
+    text-align: center;
+}
+.contenedor{
+    width: 60%;
+    margin-top:15%;
+    margin-right:auto;
+    text-align:left;
+    border-color:lightgrey;
+    margin-left: auto;
+    border:8px;
+    border-radius: 5px;
+    background-color:whitesmoke;
+
+}
