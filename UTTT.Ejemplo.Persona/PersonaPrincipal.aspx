@@ -9,10 +9,13 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" ></script>
 
 </head>
-<body>
+<body style="background-color : ghostwhite">
     <form id="form1" runat="server">
     
-    <div style="color: #000000; font-size: medium; font-family: Arial; font-weight: bold">    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    Persona</div>
+    <div style="color: #000000; font-size: medium; font-family: Arial;  font-weight: bold">    
+   <h2>Persona</h2>
+
+    </div>
     <div>
 
 
@@ -52,7 +55,7 @@
                 BorderColor="#E7E7FF" BorderStyle="None" BorderWidth="1px"--%>        
              <asp:GridView ID="dgvPersonas" runat="server" onrowcommand="dgvPersonas_RowCommand"
                 AllowPaging="True" AutoGenerateColumns="False" DataSourceID="DataSourcePersona" 
-                ViewStateMode="Disabled" CssClass="table border-light border-dark ">
+                ViewStateMode="Disabled" CssClass="table table-responsive-lg ">
                 <%--<AlternatingRowStyle BackColor="WhiteSmoke" />--%>
                 <Columns>
                     <asp:BoundField DataField="strClaveUnica" HeaderText="Clave Unica" 

@@ -259,7 +259,7 @@
 
             <div class="form-group">
                         <asp:Button ID="btnAceptar" runat="server" Text="Aceptar" 
-            onclick="btnAceptar_Click" CssClass="form-control btn btn-outline-primary" Width="930px" />
+            onclick="btnAceptar_Click" CssClass="form-control btn btn-outline-primary"  />
             </div>
             
 
@@ -270,7 +270,7 @@
 
            <div class="form-group">
         <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" 
-            onclick="btnCancelar_Click" CssClass="form-control btn btn-outline-secondary" Width="930px"/>
+            onclick="btnCancelar_Click" CssClass="form-control btn btn-outline-secondary " />
             </div>
     </form>
 

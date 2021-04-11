@@ -79,23 +79,31 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="accesoHome.aspx" />
     <Content Include="controlformato.css" />
     <Content Include="Default.aspx" />
     <Content Include="direccion.aspx" />
     <Content Include="DireccionExtraManager.aspx" />
     <Content Include="DireccionManager.aspx" />
     <Content Include="errorPage.aspx" />
+    <Content Include="estilos\estiloHome.css" />
     <Content Include="Images\delrecord_16x16.png" />
     <Content Include="Images\editrecord_16x16.png" />
+    <Content Include="Images\persona.png" />
     <Content Include="Images\Pixir-1-1-300x181.png" />
     <Content Include="Images\printrecord_16x16.png" />
+    <Content Include="Images\usuario.png" />
     <Content Include="javaScripFile.js" />
     <Content Include="javaScripPage.aspx" />
+    <Content Include="login.aspx" />
     <Content Include="PersonaManager.aspx" />
     <Content Include="PersonaPrincipal.aspx" />
+    <Content Include="recuperarPass.aspx" />
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="usuarioManager.aspx" />
+    <Content Include="usuarioPrincipal.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -107,6 +115,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="accesoHome.aspx.cs">
+      <DependentUpon>accesoHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="accesoHome.aspx.designer.cs">
+      <DependentUpon>accesoHome.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>Default.aspx</DependentUpon>
@@ -149,6 +164,13 @@
     <Compile Include="javaScripPage.aspx.designer.cs">
       <DependentUpon>javaScripPage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="paginaMaster.Master.cs">
       <DependentUpon>paginaMaster.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -171,6 +193,27 @@
       <DependentUpon>PersonaPrincipal.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="recuperarPass.aspx.cs">
+      <DependentUpon>recuperarPass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="recuperarPass.aspx.designer.cs">
+      <DependentUpon>recuperarPass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="usuarioManager.aspx.cs">
+      <DependentUpon>usuarioManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usuarioManager.aspx.designer.cs">
+      <DependentUpon>usuarioManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="usuarioPrincipal.aspx.cs">
+      <DependentUpon>usuarioPrincipal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usuarioPrincipal.aspx.designer.cs">
+      <DependentUpon>usuarioPrincipal.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
